@@ -1,0 +1,54 @@
+# Welcome to the Apache Camel Karaf Examples
+
+= Introduction
+
+This directory contains the various examples for working with Apache
+Camel. The examples can be run using Maven. When using the Maven
+command, Maven will attempt to download the required dependencies from a
+central repository to your local repository.
+View the individual example READMEs for details.
+
+== Examples
+
+// examples: START
+Number of Examples: 11 (0 deprecated)
+
+[width="100%",cols="4,2,4",options="header"]
+|===
+| Example | Category | Description
+
+| link:camel-example-fhir-osgi/README.adoc[Fhir Osgi] (camel-example-fhir-osgi) | Health Care | An example running Camel FHIR using OSGi Blueprint
+
+| link:camel-example-transformer-blueprint/README.adoc[Transformer OSGi Blueprint] (camel-example-transformer-blueprint) | Input/Output Type Contract | An example demonstrating declarative transformation along data type declaration using OSGi Blueprint
+    
+
+| link:camel-example-artemis-amqp-blueprint/README.adoc[Artemis Amqp Blueprint] (camel-example-artemis-amqp-blueprint) | Messaging | Demonstrates ActiveMQ Artemis using Camel's AMQP component.
+    
+
+| link:camel-example-cxf-blueprint/README.adoc[CXF Blueprint] (camel-example-cxf-blueprint) | OSGi | An example which use a CXF consumer and the OSGI HTTP Service
+
+| link:camel-example-olingo4-blueprint/README.adoc[Olingo4 OSGi] (camel-example-olingo4-blueprint) | OSGi | An example which use the Olingo4 component in OSGi Blueprint
+
+| link:camel-example-openapi-osgi/README.adoc[OpenApi OSGi] (camel-example-openapi-osgi) | OSGi | An example using REST DSL in XML and OpenApi API
+
+| link:camel-example-servlet-rest-blueprint/README.adoc[Servlet REST Blueprint] (camel-example-servlet-rest-blueprint) | OSGi | An example using Servlet Rest with OSGi Blueprint
+
+| link:camel-example-servlet-rest-karaf-jaas/README.adoc[Servlet REST Blueprint] (camel-example-servlet-rest-karaf-jaas) | OSGi | An example using Servlet REST with OSGi Blueprint, and REST endpoint protected by Basic Auth, delegate user/password authentication to Karaf Jaas Service
+
+| link:camel-example-sql-blueprint/README.adoc[SQL Blueprint] (camel-example-sql-blueprint) | OSGi | An example for showing Camel using SQL component with OSGi Blueprint
+
+| link:camel-example-swagger-osgi/README.adoc[Swagger OSGi] (camel-example-swagger-osgi) | OSGi | An example using REST DSL in XML and Swagger API
+
+| link:camel-example-twitter-websocket-blueprint/README.adoc[Twitter Websocket Blueprint] (camel-example-twitter-websocket-blueprint) | Social | An example that pushes new tweets to a web page using web-socket
+|===
+// examples: END
+
+== Help and contributions
+
+If you hit any problem using Camel or have some feedback, 
+then please https://camel.apache.org/support.html[let us know].
+
+We also love contributors, 
+so https://camel.apache.org/contributing.html[get involved] :-)
+
+The Camel riders!
