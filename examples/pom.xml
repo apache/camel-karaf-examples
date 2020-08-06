@@ -84,6 +84,7 @@
         <module>camel-example-artemis-amqp-blueprint</module>
         <module>camel-example-fhir-osgi</module>
         <module>camel-example-cxf-blueprint</module>
+        <module>camel-example-ehcache-blueprint</module>
         <module>camel-example-olingo4-blueprint</module>
         <module>camel-example-servlet-rest-blueprint</module>
         <module>camel-example-servlet-rest-karaf-jaas</module>
