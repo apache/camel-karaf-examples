@@ -11,11 +11,13 @@ View the individual example READMEs for details.
 == Examples
 
 // examples: START
-Number of Examples: 12 (0 deprecated)
+Number of Examples: 14 (0 deprecated)
 
 [width="100%",cols="4,2,4",options="header"]
 |===
 | Example | Category | Description
+
+| link:camel-example-mybatis/README.adoc[MyBatis] (camel-example-mybatis) | Database | An example for showing Camel using MyBatis SQL mapper component
 
 | link:camel-example-fhir-osgi/README.adoc[Fhir Osgi] (camel-example-fhir-osgi) | Health Care | An example running Camel FHIR using OSGi Blueprint
 
@@ -28,6 +30,10 @@ Number of Examples: 12 (0 deprecated)
 | link:camel-example-cxf-blueprint/README.adoc[CXF Blueprint] (camel-example-cxf-blueprint) | OSGi | An example which use a CXF consumer and the OSGI HTTP Service
 
 | link:camel-example-ehcache-blueprint/README.adoc[EHCache OSGi] (camel-example-ehcache-blueprint) | OSGi | An example using EHCache with OSGi Blueprint
+
+| link:camel-example-netty-http/README.adoc[Netty HTTP] (camel-example-netty-http) | OSGi | An example showing how to use a shared Netty HTTP server with multiple Camel applications in OSGi
+        container
+    
 
 | link:camel-example-olingo4-blueprint/README.adoc[Olingo4 OSGi] (camel-example-olingo4-blueprint) | OSGi | An example which use the Olingo4 component in OSGi Blueprint
 
