@@ -112,8 +112,10 @@
         <!-- Versions -->
         <arquillian-version>1.5.0.Final</arquillian-version>
         <asciidoctorj-version>2.1.0</asciidoctorj-version>
+        <build-helper-maven-plugin-version>3.2.0</build-helper-maven-plugin-version>
         <camel-bundle-plugin-version>${camel.version}</camel-bundle-plugin-version>
         <cdi-api-1.2-version>1.2</cdi-api-1.2-version>
+        <depends-maven-plugin-version>1.4.0</depends-maven-plugin-version>
         <glassfish-jaxb-runtime-version>${jakarta-jaxb-version}</glassfish-jaxb-runtime-version>
         <groovy-version>3.0.2</groovy-version>
         <pax-exam-version>4.13.2</pax-exam-version>
@@ -553,6 +555,18 @@
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>exec-maven-plugin</artifactId>
                     <version>${exec-maven-plugin-version}</version>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>build-helper-maven-plugin</artifactId>
+                    <version>${build-helper-maven-plugin-version}</version>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.servicemix.tooling</groupId>
+                    <artifactId>depends-maven-plugin</artifactId>
+                    <version>${depends-maven-plugin-version}</version>
                 </plugin>
             </plugins>
         </pluginManagement>
