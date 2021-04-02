@@ -41,7 +41,7 @@ Number of Examples: 14 (0 deprecated)
 
 | link:camel-example-servlet-rest-blueprint/README.adoc[Servlet REST Blueprint] (camel-example-servlet-rest-blueprint) | OSGi | An example using Servlet Rest with OSGi Blueprint
 
-| link:camel-example-servlet-rest-karaf-jaas/README.adoc[Servlet REST Blueprint] (camel-example-servlet-rest-karaf-jaas) | OSGi | An example using Servlet REST with OSGi Blueprint, and REST endpoint protected by Basic Auth, delegate user/password authentication to Karaf Jaas Service
+| link:camel-example-servlet-rest-karaf-jaas/README.adoc[Servlet REST Karaf JAAS] (camel-example-servlet-rest-karaf-jaas) | OSGi | An example using Servlet REST with OSGi Blueprint, and REST endpoint protected by Basic Auth, delegate user/password authentication to Karaf Jaas Service
 
 | link:camel-example-sql-blueprint/README.adoc[SQL Blueprint] (camel-example-sql-blueprint) | OSGi | An example for showing Camel using SQL component with OSGi Blueprint
 
