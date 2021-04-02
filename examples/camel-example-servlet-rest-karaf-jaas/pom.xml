@@ -35,7 +35,7 @@
 
     <properties>
         <category>OSGi</category>
-        <title>Servlet REST Blueprint</title>
+        <title>Servlet REST Karaf JAAS</title>
 
         <camel.osgi.import.pkg>
             *
