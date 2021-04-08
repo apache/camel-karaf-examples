@@ -214,6 +214,17 @@
                 </configuration>
             </plugin>
 
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>${maven-jar-plugin-version}</version>
+                <configuration>
+                    <archive>
+                        <manifestFile>${camel.osgi.manifest}</manifestFile>
+                    </archive>
+                </configuration>
+            </plugin>
+
             <!-- update readme file -->
             <plugin>
                 <groupId>org.apache.camel</groupId>
