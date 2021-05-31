@@ -51,7 +51,7 @@ until you hit ctrl+c to shutdown ActiveMQ Artemis.
 Start the Camel application:
 
 ....
-mvn camel:run -DskipTests=true
+mvn camel-karaf:run -DskipTests=true
 ....
 
 Once started, Camel will be listening for HTTP requests (port 9090) as a

@@ -23,6 +23,7 @@
     <feature name="camel-example-sql-blueprint" version="${camel.version}">
         <feature version="${camel.version}">camel</feature>
         <feature version="${camel.version}">camel-blueprint</feature>
+        <feature version="${camel.version}">camel-timer</feature>
         <feature version="${camel.version}">camel-sql</feature>
         <bundle>mvn:org.apache.derby/derby/${derby-version}</bundle>
         <bundle>mvn:org.apache.commons/commons-pool2/${commons-pool2-version}</bundle>
