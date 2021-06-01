@@ -1,0 +1,65 @@
+== Camel Example Kamelet Chuck Norris
+
+=== Introduction
+
+This example shows how you can build a simple Kamelet and use with your Camel applications.
+
+The kamelet is created as a YAML file in the `src/main/resources/kamelets' directory.
+We have developed a Chuck Norris Kamelet that periodically gets a joke from the Chuck Norris internet database.
+
+A Camel routes is _coded_ in OSGi Blueprint in the `src/main/resources/OSGI-INF/blueprint/camel-context.xml` file
+using the XML DSL that uses the Kamelet, and log the result from the Kamelet to the console.
+
+=== Build
+
+You will need to compile this example first:
+
+[source,sh]
+----
+$ mvn compile
+----
+
+=== Run
+
+You can run this example using
+
+[source,sh]
+----
+$ mvn camel-karaf:run
+----
+
+=== Run with Karaf
+
+You will need to install this example first to your local maven
+repository with:
+
+....
+mvn install
+....
+
+Then you can install this example from the shell using this example’s
+`+features.xml+` for easy provisioning:
+
+....
+feature:repo-add mvn:org.apache.camel.example/camel-example-kamelet-chucknorris/${version}/xml/features
+feature:install camel-example-kamelet-chucknorris
+....
+
+And you can see the application running by tailing the logs:
+
+....
+log:tail
+....
+
+And you can use ctrl+c to stop tailing the log.
+
+
+=== Help and contributions
+
+If you hit any problem using Camel or have some feedback, then please
+https://camel.apache.org/community/support/[let us know].
+
+We also love contributors, so
+https://camel.apache.org/community/contributing/[get involved] :-)
+
+The Camel riders!

@@ -11,7 +11,7 @@ View the individual example READMEs for details.
 == Examples
 
 // examples: START
-Number of Examples: 14 (0 deprecated)
+Number of Examples: 15 (0 deprecated)
 
 [width="100%",cols="4,2,4",options="header"]
 |===
@@ -30,6 +30,8 @@ Number of Examples: 14 (0 deprecated)
 | link:camel-example-cxf-blueprint/README.adoc[CXF Blueprint] (camel-example-cxf-blueprint) | OSGi | An example which use a CXF consumer and the OSGI HTTP Service
 
 | link:camel-example-ehcache-blueprint/README.adoc[EHCache OSGi] (camel-example-ehcache-blueprint) | OSGi | An example using EHCache with OSGi Blueprint
+
+| link:camel-example-kamelet-chucknorris/README.adoc[Kamelet Chuck Norris] (camel-example-kamelet-chucknorris) | OSGi | 
 
 | link:camel-example-netty-http/README.adoc[Netty HTTP] (camel-example-netty-http) | OSGi | An example showing how to use a shared Netty HTTP server with multiple Camel applications in OSGi
         container
