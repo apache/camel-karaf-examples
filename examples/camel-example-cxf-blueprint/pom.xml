@@ -59,13 +59,11 @@
     </dependencyManagement>
 
     <dependencies>
+
         <dependency>
-            <groupId>org.apache.camel</groupId>
-            <artifactId>camel-core</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.camel</groupId>
-            <artifactId>camel-cxf</artifactId>
+            <groupId>org.apache.camel.karaf</groupId>
+            <artifactId>camel-cxf-blueprint</artifactId>
+            <version>${camel.version}</version>
         </dependency>
 
         <!-- logging -->
