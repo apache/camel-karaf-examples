@@ -36,6 +36,10 @@
         <category>OSGi</category>
         <title>CXF Blueprint</title>
 
+        <camel.osgi.import.pkg>
+            javax.jws*;version="[1,3)",
+            *
+        </camel.osgi.import.pkg>
         <camel.osgi.export.pkg>
             org.apache.camel.example.reportincident*
         </camel.osgi.export.pkg>
