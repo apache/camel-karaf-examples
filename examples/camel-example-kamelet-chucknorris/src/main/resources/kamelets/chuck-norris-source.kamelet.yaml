@@ -14,7 +14,7 @@ spec:
   definition:
     title: "Chuck Norris Source"
     description: |-
-      Gets peridically Chuck Norris jokes from http://www.icndb.com/
+      Gets peridically Chuck Norris jokes from https://api.chucknorris.io/jokes/random
     type: object
     properties:
       period:
@@ -36,7 +36,7 @@ spec:
       parameters:
         period: "{{period}}"
       steps:
-        - to: "http://api.icndb.com/jokes/random"
+        - to: "https://api.chucknorris.io/jokes/random"
         - set-body:
-            jsonpath: "$.value.joke"
+            jsonpath: "$.value"
         - to: "kamelet:sink"
