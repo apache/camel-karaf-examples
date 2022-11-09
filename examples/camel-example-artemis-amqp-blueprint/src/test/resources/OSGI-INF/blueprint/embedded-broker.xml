@@ -50,10 +50,12 @@
     </argument>
   </bean>
 
+
   <!-- Blueprint does not support Bean inheritance (necessary for Artemis EmbeddedJMS)
        We need therefore a 'support' class -->
   <bean id="embeddedJMS"
         class="org.apache.camel.example.artemis.amqp.EmbeddedBrokerSupport"
+        init-method="startServer"
         destroy-method="close">
     <argument ref="securityManager"/>
   </bean>

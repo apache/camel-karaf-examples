@@ -16,30 +16,22 @@
  */
 package org.apache.camel.example.artemis.amqp;
 
-import org.apache.activemq.artemis.jms.server.embedded.EmbeddedJMS;
+import org.apache.activemq.artemis.core.server.embedded.EmbeddedActiveMQ;
 import org.apache.activemq.artemis.spi.core.security.ActiveMQJAASSecurityManager;
-
-// import org.apache.activemq.artemis.core.config.impl.SecurityConfiguration;
-// import org.apache.activemq.artemis.spi.core.security.jaas.InVMLoginModule;
 
 
 //#################################################
 // Blueprint does not support Bean inheritance (necessary for Artemis EmbeddedJMS)
 // We need therefore a 'support' class
 //#################################################
-public class EmbeddedBrokerSupport extends EmbeddedJMS {
+public class EmbeddedBrokerSupport extends EmbeddedActiveMQ {
     
     public EmbeddedBrokerSupport(ActiveMQJAASSecurityManager securityManager) throws Exception {
         this.setSecurityManager(securityManager);
+    }
+    
+     public void startServer() throws Exception {
         this.start();
-
-        //if you need more twicking use Java to customise as follows:
-            // SecurityConfiguration securityConfig = new SecurityConfiguration();
-            // securityConfig.addUser("guest", "guest");
-            // securityConfig.addRole("guest", "guest");
-            // securityConfig.setDefaultUser("guest");
-            // ActiveMQJAASSecurityManager securityManager = new ActiveMQJAASSecurityManager(InVMLoginModule.class.getName(), securityConfig);
-            // this.setSecurityManager(securityManager);
     }
 
     public void close() throws Exception {
