@@ -36,9 +36,7 @@
       <log message="Receiving file ${file:name}" />
       <log message="Sending file ${file:name} to OData Test Service" />
 
-      <unmarshal>
-        <string charset="UTF-8"/>
-      </unmarshal>
+      <convertBodyTo type="String"/>
 
       <to uri="odata4://create/People"/>
 
