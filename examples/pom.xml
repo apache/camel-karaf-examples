@@ -138,6 +138,7 @@
         <woodstox-version>6.0.3</woodstox-version>
         <xmlunit-version>1.6</xmlunit-version>
         <derby-version>10.14.2.0</derby-version>
+        <commons-dbcp2-version>2.9.0</commons-dbcp2-version>
 
         <!-- for symbolicName in OSGi examples we only want the artifactId, eg camel-example-sql -->
         <!-- as having org.apache.camel as prefix is not needed and makes the name very long -->
